@@ -16434,6 +16434,17 @@
 		<div style="width: 50vw;"></div>
 
 		</style>
+		<script>
+			window.addEventListener('DOMContentLoaded', function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    var link = links[i];
+    if (link.href.startsWith('http://') || link.href.startsWith('https://')) {
+      link.href = 'https://www.zxki.cn/go.php?url=' + link.href.replace('https://www.zxki.cn/', '');
+    }
+  }
+});
+		</script>
 	</head>
 	<body><noscript><strong>We're sorry but qsou doesn't work properly without JavaScript enabled. Please enable it to
 				continue.</strong></noscript>
