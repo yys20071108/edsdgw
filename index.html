@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>易档商店</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css">
+
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .banner {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #e8eaf6;
+      margin-top: 60px;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .feature {
+      text-align: center;
+    }
+
+    footer {
+      position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            background-color: rgba(255, 255, 255, 0.6);
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+
+    }
+
+    footer a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      z-index: 999;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+
+    }
+
+    .screenshot {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .screenshot img {
+      max-width: 100%;
+    }
+
+    .description {
+      margin-bottom: 20px;
+    }
+
+    .updates {
+      margin-bottom: 20px;
+    }
+
+    .partner {
+      margin-bottom: 20px;
+    }
+
+    .details {
+      margin-bottom: 20px;
+    }
+
+    .sliderimg[data-v-0327e752] {
+				border-radius: 20px;
+				width: 190px;
+				height: 390px
+			}
+
+      .description-icon[data-v-0c3d1062] {
+				width: 21px;
+				height: 21px;
+				border-radius: 50%;
+				font-size: 10px
+			}
+      
+      .jieshao{color: #505050;}
+      .features {
+      background-color: #fff;
+      padding: 40px;
+    }
+    
+    .features h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .feature-card {
+      max-width: 300px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+    
+    .feature-card:hover {
+      transform: scale(1.05);
+    }
+    
+    .feature-icon {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+  </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<div class="mdui-toolbar mdui-color-theme">
+  <button class="mdui-btn mdui-btn-icon mdui-ripple" onclick="toggleSidebar()">
+    <a href="#" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
+
+  </button>
+  <h3 class="mdui-typo-headline">易档商店</h3>
+  </div>
+<body class="mdui-drawer-body-left">
+  <!-- 侧边栏开始 -->
+  <div class="mdui-drawer mdui-drawer-full-height mdui-color-indigo-650" id="sidebar">
+    <ul class="mdui-list">
+      <h3 class="mdui-typo-headline">易档商店</h3>
+      <p></p>
+      <li class="mdui-list-item mdui-ripple">
+        
+
+        <a href="index.html" class="mdui-list-item-content">首页</a>
+      </li>
+      <li class="mdui-subheader">操作</li>
+      <li class="mdui-list-item mdui-ripple">
+        <a href="xz.html" class="mdui-list-item-content">下载</a>
+      </li>
+      <li class="mdui-subheader">关于</li>
+      <li class="mdui-list-item mdui-ripple">
+        <a href="about.html" class="mdui-list-item-content">关于我们</a>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <a href="thanks.html" class="mdui-list-item-content">鸣谢</a>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <a  href="https://hdgxl.com" class="mdui-list-item-content">网站建设：顾小林</a>
+    
+      </li>
+    </ul>
+   
+  </div>
+  <!-- 侧边栏结束 -->
+
+
+  <div class="container">
+    <div class="screenshot">
+      <img src="logo.jpg" width="200" height="200" alt="截图">
+      <h3 class="mdui-typo-headline" style="font-size: 35px;">易档商店</h3>
+      <h3 class="mdui-typo-headline" style="font-size: 20x;color:#8f8f8f;">一个页面简洁、兼容性高的应用商店</h3>
+      <div class="mdui-divider-dark"></div>
+        <div class="jieshao" style="font-size: 15px;">
+ 
+              <h2>功能特点</h2>
+              <div class="feature-card">
+                <i class="fas fa-star feature-icon"></i>
+          <h2>页面简洁</h2>
+      
+          <p>十分简洁的页面，没有广告，页面清爽有干净，给你好心情:-）。</p>
+      
+        </div>
+          <br>
+     
+              <div class="feature-card">
+                <i class="fas fa-check-circle feature-icon"></i>
+            <h2>兼容性高</h2>
+         
+            <p>本软件商店有着极高的兼容性，你可以在手表、模拟器、手机甚至电视上运行我们的软件。</p>
+          
+        
+          </div>
+            <br>
+   
+                <div class="feature-card">
+                  <i class="fas fa-smile feature-icon"></i>
+              <h2>下载稳定</h2>
+            
+              <p>我们采用的下载线路是又快有稳定的高速线路，下载稳定。商店有30+的软件任你选择！</p>
+              </div>
+ 
+              <div class="mdui-divider-dark"></div>
+
+    </div>
+
+    <div class="description">
+      <h2>简介</h2>
+      <p>一个高中生独立开发的一个手表应用商店</p>
+     
+    </div>
+
+    <div class="updates">
+      <h2>更新内容</h2>
+      <div data-v-0c3d1062="" class="update-list" style="font-size: 5px;">
+
+        <li>2.1</li>
+        <h5>1.新增加分类功能</h5>
+        <h5>2.优化启动速度</h5>
+        <h5>3.解决已知的应用更多信息问题</h5>
+        <div class="mdui-divider-dark"></div>
+        <li>1.9</li>
+        <h5>1.实际显示安装后的版本为2.0</h5>
+        <h5>2.修复分类应用列表无法正常显示的功能</h5>
+        <h5>3.但是目前2.0版本目前新用户反馈和我这边看到发现应用更多查看你，查看更多你的版本号，功能无法正常显示功能正在2.1修复。</li>
+        
+      </div>
+    </div>
+
+   
+
+<br>
+<br>
+  <footer>
+
+      © 2024 易档商店. All rights reserved.
+      <a target="_blank" href="https://icp.gov.moe/?keyword=edsc.top">萌ICP备20230361号</a>
+    
+
+
+  </footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js"></script>
+  <script>
+    var drawer = new mdui.Drawer('#sidebar');
+    var overlay = document.querySelector('.overlay');
+
+    function toggleSidebar() {
+      drawer.toggle();
+      overlay.style.display = overlay.style.display === 'block' ? 'none' : 'block';
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+
+      drawer.close();
+
+
+      overlay.addEventListener('click', function () {
+        toggleSidebar();
+      });
+    });
+  </script>
+</body>
+
+</html>
