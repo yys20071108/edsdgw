@@ -1,0 +1,9 @@
+# [edsc.top](edsc.top)易档商店官网
+## 官网编写人员
+* 奕奕
+* Genouka
+## 官网技术支持
+* 麻衣酱(Sakura)
+* 贺某人
+* GenOuka
+* 等等
